@@ -28,7 +28,7 @@ docker {
     javaApplication {
         baseImage = 'java:8'
         port = 7080
-        tag = "iide/${project.name}:latest"
+        tag = "fvanderbiest/${project.name}:latest"
     }
     /*registryCredentials {
         url =
