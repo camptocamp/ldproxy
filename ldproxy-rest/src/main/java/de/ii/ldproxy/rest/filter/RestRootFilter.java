@@ -46,13 +46,13 @@ public class RestRootFilter implements ContainerResponseFilter {
     @Override
     public ContainerResponse filter(ContainerRequest request, ContainerResponse response) {
 
-        if (request.getPath().endsWith("services/app/css/app.css")) {
+        if (request.getPath().endsWith("app/css/app.css")) {
             writeContent(response, "/css/app.css", "text/css; charset=utf-8");
-        } else if (request.getPath().endsWith("services/app/js/featureCollection.js")) {
+        } else if (request.getPath().endsWith("app/js/featureCollection.js")) {
             writeContent(response, "/js/featureCollection.js", "application/javascript");
-        } else if (request.getPath().endsWith("services/app/js/featureDetails.js")) {
+        } else if (request.getPath().endsWith("app/js/featureDetails.js")) {
             writeContent(response, "/js/featureDetails.js", "application/javascript");
-        } else if (request.getPath().endsWith("services/favicon.ico")) {
+        } else if (request.getPath().endsWith("favicon.ico")) {
             writeContent(response, "/img/favicon.ico", "image/x-icon");
         }
 
